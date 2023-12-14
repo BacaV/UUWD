@@ -72,6 +72,10 @@ body, html{
     margin: 10px 0;
 }
 
+.h4{
+    margin: 0 !important;
+}
+
 .p{
     font-size: 2rem !important;
 }
@@ -135,15 +139,24 @@ body, html{
 }
 
 .cardd{
-    background-color: red;
+    background-color: transparent;
     color: white;
     border-radius: 20px;
+    border: 1px solid red;
 }
 
 .horizontal{
     border: 1px solid black;
     margin: 10px 10%;
     width: 80%;
+    border-color: red;
+}
+
+.horizontal2{
+    border: 1px solid black;
+    margin: 10px 10%;
+    width: 80%;
+    border-color: black;
 }
 
 .card-up{
@@ -205,4 +218,119 @@ body, html{
 .social{
     width: 32px;
     margin: 16px;
+}
+
+
+/*Page2*/
+
+.ticket-page{
+    height: auto;
+    padding: 130px 0;
+}
+
+.ticket{
+    background-color: red;
+    height: 200px;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    margin: 20px 0;
+    color: white ;
+}
+
+.name-date{
+    width: 30%;
+    border-top: 2px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.price-btn{
+    width: 70%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+}
+
+.ticket-btn{
+    border: 1px solid black !important;
+    background-color: red !important;
+    color: white!important;
+}
+
+@media screen and (max-width:992px){
+    .ticket{
+        background-color: red;
+        height: 160px;
+        width: 80%;
+        position: relative;
+        top: 10%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:450px){
+    .ticket{
+        background-color: red;
+        height: 120px;
+        width: 80%;
+        position: relative;
+        top: 10%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .h4{
+        font-size: 18px !important;
+    }
+
+    .ticket-btn{
+        font-size: 12px !important;
+    }
+
+    .name-date{
+        padding: 10px 5px;
+    }
+}
+
+/*Page3*/
+
+.hidden-btn{
+    display: none;
+    background-color: red !important;
+    border: none;
+}
+.hidden-btn-lg{
+        display: block;
+        background-color: red !important;
+        border: none;
+        position: relative;
+        top: -180px;
+    }
+
+@media  screen and (max-width:992px) {
+    .acc-page{
+        padding: 120px 0;
+    }
+    .acc-image{
+        margin-bottom: -150px;
+    }
+    
+    .hidden-btn-lg{
+        display: none;
+    }
+
+    .hidden-btn{
+        display: block;
+    }
+}
+
+@media  screen and (max-width:450px) {
+
+    .acc-image{
+        margin-bottom: -300px;
+    }
+    
 }
